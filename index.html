@@ -1,0 +1,70 @@
+<html>
+<head>
+	 <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    		<title> Baxter's Dungeon </title>
+</head>
+<body>
+	<canvas id = "canvas" width = "400" height = "600"style="border: 1px solid black">
+	</canvas>
+	<div class = "cover" id = "menu" width = "400" height = "800">
+		<h1 >Baxter's Dungeon</h1>
+		<p id = "score"> </p>
+		<p onclick="play()" id = "play">Play</p>
+
+	</div>
+</body>
+
+<style type="text/css">
+	canvas {
+	     background: #727578;
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 right: 0;
+		 margin: 0 auto;
+	}
+	.cover {
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 right: 0;
+		 margin: 0 auto;
+	}
+	#menu {
+		font-family: "Special Elite", Futura;
+		background: black;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: white;
+		text-align: center;
+
+	}
+	#menu h1 {
+		letter-spacing: 5px;
+		margin-top: 15%;
+	}
+	#menu p {
+
+		font-size: 25px;
+		margin-top: 50px;
+		letter-spacing: 3px;
+	}
+	#menu #play:hover {
+		color: #a4a8ad;
+		cursor: pointer;
+
+	}
+</style>
+
+<script src="js/global.js"></script>
+<script src="js/enemies.js"></script>
+<script src="js/powerups.js"></script>
+<script src="js/main.js"></script>
+
+</html>
+
